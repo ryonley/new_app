@@ -32,7 +32,7 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara'
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', ">= 2.0.0.beta"
   gem 'factory_girl_rails', '4.1.0'
