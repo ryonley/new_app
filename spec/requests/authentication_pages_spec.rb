@@ -91,9 +91,9 @@ describe "Authentication" do
         it { should_not have_selector('title', text: full_title('Edit user')) }
       end
 
-      describe "submitting a PUT request to the Users#update action" do
-        before { put user_path(wrong_user)}
-        specify { response.should redirect_to(root_path) }
+      describe "submitting a PATCH  request to the Users#update action" do
+        before { patch user_path(wrong_user)}
+        specify { expect(response).to redirect_to(root_path) }
       end
 
     end
